@@ -26,7 +26,7 @@ def setup():
 def loop():
     value = adc.analogRead(0)
     print ('ADC Value : ', value)
-    while value >= 40: ##MAKE 80 THE LEVEL
+    while value >= 80: ##MAKE 80 THE LEVEL
         value = adc.analogRead(0)    # read the ADC value of channel 0
         print ('ADC Value : ', value)
         WaterPump.WaterOn()
